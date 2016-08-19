@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+  <head>
+    <meta charset="utf-8"> 
+    <title>005: Chile en nogada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="../img/logo-border.png">
+    <link rel="stylesheet" href="../css/podcast.css"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+    <![endif]-->
+    <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.jplayer.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#jquery_jplayer_1").jPlayer({
+          ready: function () {
+            $(this).jPlayer("setMedia", {
+              mp3: "../../podcastgen/media/2015-06-23_pp-005.mp3",
+            });
+          },
+          swfPath: "/js",
+          supplied: "mp3"
+        });
+      });
+	</script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="http://prietostudios.com/"><img src="../img/logo-border.svg" height="72" width="72" alt="Prieto Studios"></a>
+    </nav>
+    <div id="live-nav">
+      <div id="live-button"  class="live" onclick="window.open('http://prietostudios.com/podcast/live', '_blank');">
+        <i class="fa fa-microphone"></i> LIVE
+      </div>
+    </div>
+    
+    <div class="group">
+      <div class="episodeDesc">
+        <h2>#005</h2>
+        <h4>27 de agosto de 2015</h4>
+        <p>El episodio giró en torno a los "memes": qué son y su impacto en internet y sobre juegos populares en extremo (como la serie de GTA y The King of Fighters).</p>
+        <span class="downloadBtns">
+          <a href="http://prietostudios.com/podcastgen/media/2015-06-23_pp-005.mp3" download="PrietoPodcast-005.mp3"><i class="fa fa-download podcastDl"></i> Descargar Episodio</a>
+        </span>
+        <span class="downloadBtns">
+          <a href="itms://itunes.apple.com/mx/podcast/prieto-podcast/id1000356436?l=es" title="Ver en iTunes"><i class="fa fa-music podcastDl"></i> Ver en iTunes</a>
+        </span>
+        <span class="downloadBtns">
+          <a href="http://prietostudios.com/podcastgen/feed.xml" title="Suscribirse"><i class="fa fa-rss podcastDl"></i> Suscribirse por RSS</a>
+        </span>
+      </div>
+      <div class="coverBox">
+        <img src="cover.jpg" alt="" class="imgCover" />
+      </div>
+    </div>
+    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+      <div id="jp_container_1" class="jp-audio">
+        <div class="jp-type-single">
+          <div class="jp-progress">
+            <div class="jp-seek-bar">
+              <div class="jp-play-bar"></div>
+            </div>
+          </div>
+          <div class="jp-gui jp-interface">
+            <div class="jp-controls">
+              <div onClick="javascript:;" class="jp-play"></div>
+              <div onClick="javascript:;" class="jp-pause"></div>
+              <div onClick="javascript:;" class="jp-mute">&#61480;</div>
+              <div onClick="javascript:;" class="jp-unmute">&#61478;</div>
+            </div>
+            <div class="jp-volume-bar">
+              <div class="jp-volume-bar-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="backBtn">
+      <a href="http://prietostudios.com/podcast/" title="Lista de episodios" ><i class="fa fa-list"></i></a>
+    </nav>
+    <script type="text/javascript" src="../player/js/bbplayer.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-64197583-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

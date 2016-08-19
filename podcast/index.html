@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <title>Prieto Podcast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="img/logo-border.png">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smoothState.js"></script>
+    <script type="text/javascript" src="js/trans.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        var filterList = {
+   
+        init: function () {
+        
+          // MixItUp plugin
+          // http://mixitup.io
+          $('#episodelist').mixitup({
+            targetSelector: '.episode',
+            filterSelector: '.filter',
+            effects: ['fade'],
+            easing: 'snap',
+            // call the hover effect
+            onMixEnd: filterList.hoverEffect()
+          });
+        },
+
+        hoverEffect: function () {
+          // Simple parallax effect
+          $('#episodelist .episode').hover(
+            function () {
+              $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+              $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+            },
+            function () {
+              $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+              $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+            }
+          );
+          }
+        };
+
+      // Run the show!
+      filterList.init();
+      });
+    </script>
+  </head>
+  <body>
+    <nav id="navbar" class="divURL" onclick="window.open('http://prietostudios.com/', '_self');">
+      <img src="img/logo-border.svg" height="72" width="72" alt="Prieto Studios" class="logoPS">
+    </nav>
+    <div id="live-nav" class="divURL" onclick="window.open('http://prietostudios.com/podcast/live', '_self');">
+      <div id="live-button" class="live"><i class="fa fa-microphone"></i> LIVE</div>
+    </div>
+    <div class="container"><br>
+      <div id="episodelist">
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/031', '_self');">
+          <div class="episode-wrapper">
+            <img src="031/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/030', '_self');">
+          <div class="episode-wrapper">
+            <img src="030/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/029', '_self');">
+          <div class="episode-wrapper">
+            <img src="029/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/028', '_self');">
+          <div class="episode-wrapper">
+            <img src="028/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/027', '_self');">
+          <div class="episode-wrapper">
+            <img src="027/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/025', '_self');">
+          <div class="episode-wrapper">
+            <img src="025/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/006', '_self');">
+          <div class="episode-wrapper">
+            <img src="006/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/005', '_self');">
+          <div class="episode-wrapper">
+            <img src="005/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/004', '_self');">
+          <div class="episode-wrapper">
+            <img src="004/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/003', '_self');">
+          <div class="episode-wrapper">
+            <img src="003/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/002', '_self');">
+          <div class="episode-wrapper">
+            <img src="002/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/001', '_self');">
+          <div class="episode-wrapper">
+            <img src="001/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+
+        <!-- Episode -->
+        <div class="episode logo divURL" data-cat="logo" onclick="window.open('http://prietostudios.com/podcast/000', '_self');">
+          <div class="episode-wrapper">
+            <img src="000/cover.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <b class="text-title"><i class="fa fa-play"></i> Escuchar episodio</b>
+                <span class="text-category">Disponible:  <i class="fa fa-download"></i>  <i class="fa fa-music"></i>  <i class="fa fa-rss"></i></span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div> <!-- End Episode -->
+      </div>
+    </div><!-- container -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-64197583-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
+
