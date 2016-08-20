@@ -179,8 +179,8 @@ html, body {
   margin-right:auto;
 }
 
-.jp-play { background-image: url('http://prietostudios.com/podcast/player/images/play.png'); }
-.jp-pause { background-image: url('http://prietostudios.com/podcast/player/images/pause.png'); }
+.jp-play { background-image: url('https://gustawho.com/prietostudios/podcast/player/images/play.png'); }
+.jp-pause { background-image: url('https://gustawho.com/prietostudios/podcast/player/images/pause.png'); }
 
 .jp-mute,.jp-unmute {
   color:#fff;
