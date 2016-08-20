@@ -6,7 +6,7 @@ $field_name = $_POST['name'];
 $field_email = $_POST['email'];
 $field_message = $_POST['subject'];
 
-$mail_to = 'gustawho@gmail.com';
+$mail_to = 'me@gustawho.com';
 $subject = 'Mensaje de contacto en Prieto Studios'.$field_name;
 
 $body_message = 'De: '.$field_name."\n";

@@ -140,7 +140,7 @@ html, body {
   left:0;
   width: 100%; 
   height: 105px; 
-  background-image: url('http://prietostudios.com/images/bg-night.png');
+  background-image: url('https://gustawho.com/prietostudios/images/bg-night.png');
   background-position-bottom: 0px 0px;
   background-repeat: repeat-x;
   animation: animatedBackground 40s linear infinite;
@@ -212,12 +212,12 @@ html, body {
 }
 
 .stars {
-  background:#000 url(http://prietostudios.com/images/stars.png) repeat top center;
+  background:#000 url(https://gustawho.com/prietostudios/images/stars.png) repeat top center;
   z-index:0;
 }
 
 .twinkling{
-  background:transparent url(http://prietostudios.com/images/twinkling.png) repeat top center;
+  background:transparent url(https://gustawho.com/prietostudios/images/twinkling.png) repeat top center;
   z-index:1;
 
   -moz-animation:move-twink-back 200s linear infinite;
